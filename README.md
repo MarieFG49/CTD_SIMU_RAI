@@ -3,13 +3,13 @@ This project aims to model and optimize the therapeutic response (administration
 
 - Objective : sensitivity study to measure the influence of protocol parameters of the therapeutic response model
 
-Presentation of programs coded on MatLab software.
+PRESENTATION OF PROGRAMES CODED ON MATLAB SOFTWARE. 
 
 1. INFLUENCE OF 3 PROTOCOL PARAMETERS ON NON-RESPONDING PATIENTS ($T_d$ = 9.8 months) :
 program : file "mainEtudeSens3_1_SensitivityAnalysis_GroupOfResponders_Td666Def" 
 program : file "mainEtudeSens3_1_SensitivityAnalysis_GroupOfResponders_Td666Def"
 
-FIGS OBTAINED :
+      FIGS OBTAINED :
 - (a) Evolution of $T_g$ for Number of Sessions $n$ from 1 to 8. For a constant activity of 3.7 GBq and a constant interval $\Delta T = 3$ months between fractions.
 - (b) Evolution of $T_g$ for Interval Between Sessions (in month) $\Delta T$  from 1 to 8 months. For a constant activity of 3.7 GBq and 8 fractions.
 - (c) Evolution of $T_g$ for variation of the Administered Activity (in GBq) $A$ from 1 to 8 GBq. For 8 fractions and a constant interval $\Delta T = 3$ months between fractions.
@@ -18,7 +18,7 @@ FIGS OBTAINED :
 program : file "mainEtudeSens3_1_SensitivityAnalysis_GroupOfResponders_Td666Def" 
 program : file "mainEtudeSens3_1_SensitivityAnalysis_GroupOfResponders_Td666Def"
 
-FIGS OBTAINED :
+      FIGS OBTAINED :
 - (a) Evolution of $T_g$ for Number of Sessions $n$ from 1 to 8. For a constant activity of 3.7 GBq and a constant interval $\Delta T = 6$ months between fractions.
 - (b) Evolution of $T_g$ for Interval Between Sessions (in month) $\Delta T$  from 1 to 8 months. For a constant activity of 3.7 GBq and 8 fractions.
 - (c) Evolution of $T_g$ for variation of the Administered Activity (in GBq) $A$ from 1 to 8 GBq. For 8 fractions and a constant interval $\Delta T = 6$ months between fractions.
