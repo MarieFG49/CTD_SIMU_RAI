@@ -1,7 +1,7 @@
 # CTD_SIMU_RAI
 This project aims to model and optimize the therapeutic response (administration of radioactive iodine) in the context of treatments for metastatic thyroid cancer. The programs presented below have been designed to evaluate the influence of protocol parameters (Number of iratherapy sessions (fractions), interval between two iratherapy sessions (in months) and radioactive iodine activity administered (in GBq)) on the therapeutic response.
 
-- Objective : sensitivity study to measure the influence of protocol parameters of the therapeutic response model
+OBJECTIVE : sensitivity study to measure the influence of protocol parameters of the therapeutic response model
 
 PRESENTATION OF PROGRAMES CODED ON MATLAB SOFTWARE. 
 
