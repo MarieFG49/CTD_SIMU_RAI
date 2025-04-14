@@ -1,24 +1,27 @@
 # CTD_SIMU_RAI
 This project aims to model and optimize the therapeutic response (administration of radioactive iodine) in the context of treatments for metastatic thyroid cancer. The programs presented below have been designed to evaluate the influence of protocol parameters (Number of iratherapy sessions (fractions), interval between two iratherapy sessions (in months) and radioactive iodine activity administered (in GBq)) on the therapeutic response.
 
-OBJECTIVE : sensitivity study to measure the influence of protocol parameters of the therapeutic response model
+Our graphical interface allows to configure protocol schemes (number of radiotherapy sessions, interval between two sessions and iodine activity administered) taking into account the individual parameters of each patient to simulate therapeutic responses and achieve the objective of optimizing the efficacy-toxicity balance of radioactive iodine treatment. The code of our RAIR-Sim simulator is provided below.
 
+OBJECTIVE : sensitivity study to measure the influence of protocol parameters of the therapeutic response model
 PRESENTATION OF PROGRAMES CODED ON MATLAB SOFTWARE. 
 
-            INFLUENCE OF 3 PROTOCOL PARAMETERS ON NON-RESPONDING PATIENTS ($T_d$ = 9.8 months) :
+INFLUENCE OF 3 PROTOCOL PARAMETERS ON NON-RESPONDING PATIENTS ($T_d$ = 9.8 months) :
 - program : file "Demonstrateur98f.m" 
 - program : file "main_demonstrateur98f.m"
-
   FIGS OBTAINED :
 - (a) Evolution of $T_g$ for Number of Sessions $n$ from 1 to 8. For a constant activity of 3.7 GBq and a constant interval $\Delta T = 3$ months between fractions.
 - (b) Evolution of $T_g$ for Interval Between Sessions (in month) $\Delta T$  from 1 to 8 months. For a constant activity of 3.7 GBq and 8 fractions.
 - (c) Evolution of $T_g$ for variation of the Administered Activity (in GBq) $A$ from 1 to 8 GBq. For 8 fractions and a constant interval $\Delta T = 3$ months between fractions.
 
-            INFLUENCE OF 3 PROTOCOL PARAMETERS ON RESPONDING PATIENTS ($T_d$ = 66.6months) :
+  INFLUENCE OF 3 PROTOCOL PARAMETERS ON RESPONDING PATIENTS ($T_d$ = 66.6months) :
 - program : file "Demonstrateur666f.m" 
 - program : file "main_demonstrateur666f.m"
-
       FIGS OBTAINED :
 - (a) Evolution of $T_g$ for Number of Sessions $n$ from 1 to 8. For a constant activity of 3.7 GBq and a constant interval $\Delta T = 6$ months between fractions.
 - (b) Evolution of $T_g$ for Interval Between Sessions (in month) $\Delta T$  from 1 to 8 months. For a constant activity of 3.7 GBq and 8 fractions.
 - (c) Evolution of $T_g$ for variation of the Administered Activity (in GBq) $A$ from 1 to 8 GBq. For 8 fractions and a constant interval $\Delta T = 6$ months between fractions.
+
+OBJECTIVE : Development of RAIR-Sim, a software platform designed to help clinicians optimize radioactive iodine (RAI) therapy.
+PRESENTATION OF PROGRAMES CODED ON MATLAB SOFTWARE. 
+-program : file "SIMULATEUR1VF2024"
