@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. In academic work, please also cite the companion Scientific Reports paper once its full reference is added here."
+title: "RAIR-Sim: a compartmental simulator of radioactive iodine therapy response in metastatic thyroid cancer"
+type: software
+
+authors:
+  - given-names: "Marie"
+    family-names: "Fusella Giuntini"
+  - given-names: "Cyril"
+    family-names: "Voyant"
+    affiliation: "Mines Paris - PSL, O.I.E. Laboratory, France"
+    website: "https://person.cyrilvoyant.com"
+    orcid: "https://orcid.org/0000-0003-0242-7377"
+
+repository-code: "https://github.com/MarieFG49/CTD_SIMU_RAI"
+license: "MIT"
+version: "1.0.0"
+
+abstract: >
+  A compartmental (ODE-based) simulator of the therapeutic response to
+  radioactive iodine (RAI) therapy in metastatic thyroid cancer. Three
+  coupled ordinary differential equations (administered activity, tumor
+  cell number, thyroglobulin biomarker) are solved in closed form fraction
+  by fraction, letting clinicians explore how the number of iratherapy
+  sessions, the interval between sessions, and the administered activity
+  affect the simulated biomarker trajectory, for both RAI-responding and
+  RAI-refractory virtual patients. Includes an interactive MATLAB App
+  Designer interface (RAIR-Sim) and scripted sensitivity-analysis tools.
+
+keywords:
+  - radioactive iodine therapy
+  - thyroid cancer
+  - digital twin
+  - pharmacodynamic modeling
+  - compartmental model
+  - thyroglobulin
+  - treatment optimization
+  - MATLAB
+
+identifiers:
+  - type: doi
+    value: "10.1038/s41598-026-56267-1"
+    description: "Companion Scientific Reports paper (bibliographic details to be confirmed and added to preferred-citation)"
+  - type: other
+    value: "https://hal.science/hal-05410326/"
+    description: "Preprint"
