@@ -1,5 +1,9 @@
 # CTD_SIMU_RAI — RAIR-Sim
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21496198.svg)](https://doi.org/10.5281/zenodo.21496198)
+
+> This is a fork of [MarieFG49/CTD_SIMU_RAI](https://github.com/MarieFG49/CTD_SIMU_RAI) with documentation, citation metadata, and a bug fix (missing `.m` extension on the main simulator). This fork is archived on Zenodo at the DOI above; see [Citation](#citation).
+
 A compartmental (deterministic) simulator of the therapeutic response to **radioactive iodine (RAI) therapy** in metastatic thyroid cancer, used to explore how protocol parameters — number of iratherapy sessions (fractions), interval between sessions, and administered activity — affect the biomarker trajectory (thyroglobulin, Tg) that tracks tumor burden. Part of a broader "hybrid digital twin" effort combining mechanistic modeling with data-driven methods for individualized RAI treatment planning; see [Related work](#related-work).
 
 ## The model
@@ -60,7 +64,7 @@ main_demonstrateur666f
 
 ## Citation
 
-If you use this code, please cite this repository and, in academic work, the Scientific Reports paper above (see [`CITATION.cff`](CITATION.cff) for both, plus the BJSTR review as a secondary reference).
+If you use this code, please cite this fork's Zenodo archive — [10.5281/zenodo.21496198](https://doi.org/10.5281/zenodo.21496198) — and, in academic work, the Scientific Reports paper above (see [`CITATION.cff`](CITATION.cff) for both, plus the BJSTR review as a secondary reference).
 
 ## License
 
