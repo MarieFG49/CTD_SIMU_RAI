@@ -20,7 +20,7 @@ $$\frac{dTg}{dt} = \lambda\,N(t) - k_e\,Tg(t)$$
 
 **Fractionation**: for a treatment of $n$ sessions spaced $\Delta T$ months apart with per-session activity $A_{\text{dose}}$, the three ODEs are solved in closed form (MATLAB `dsolve`) over each inter-session interval; at the end of interval $i$, $N$, $Tg$, and the residual activity $A$ are evaluated at $t=\Delta T$ and become the initial conditions for interval $i{+}1$, with a fresh bolus $A_{\text{dose}}$ added to the residual activity. This produces a full multi-fraction $Tg(t)$ trajectory from purely closed-form pieces (no numerical ODE integration).
 
-Two virtual patient archetypes are hardcoded via $T_d$, the single parameter separating a fast-growing, RAI-refractory tumor from a slow-growing, RAI-responsive one — all other parameters ($r_0$, $a$, $\lambda$, $k_e$, $N_0$, $Tg_0$) are shared:
+Tumor cell doubling time $T_d$ is the discriminating factor between a RAI-responder and a RAI-refractory (non-responder) profile; all model parameters, including $T_d$ itself, were calibrated on a cohort of 50 patients using the MCMC-SAEM algorithm (Monolix®) — see [Related work](#related-work). Two archetypal configurations ship as separate demonstrator scripts, with all other parameters ($r_0$, $a$, $\lambda$, $k_e$, $N_0$, $Tg_0$) shared:
 
 | Archetype | $T_d$ (months) | File |
 |---|---|---|
@@ -54,15 +54,13 @@ main_demonstrateur666f
 
 ## Related work
 
-- The Conversation (May 2026): ["IA et cancer de la thyroïde : demain, la fin des traitements standardisés ?"](https://theconversation.com/ia-et-cancer-de-la-thyro-de-demain-la-fin-des-traitements-standardises-274352) — accessible-audience summary of the "hybrid digital twin" approach this simulator is part of, combining AI and mechanistic modeling to test therapeutic scenarios (fraction number, activity, timing) before treating a patient.
-- Companion paper: *Scientific Reports* — https://www.nature.com/articles/s41598-026-56267-1
-- Preprint: HAL — https://hal.science/hal-05410326/
-
-*(Full title/author list for the Scientific Reports paper to be added to [`CITATION.cff`](CITATION.cff) once confirmed.)*
+- **M. Fusella Giuntini, C. Voyant, D. Taieb, D. Barbolosi**, "A computational framework for optimizing radioiodine therapy protocols in metastatic thyroid cancer," *Scientific Reports* (2026), accepted 29 May 2026. https://doi.org/10.1038/s41598-026-56267-1 — the paper this simulator was built for: a sensitivity analysis of RAI protocol parameters ($n$, $\Delta T$, $A$) on Tg kinetics, with $T_d$ as the discriminating responder/non-responder biomarker, and model parameters calibrated on a 50-patient cohort via MCMC-SAEM (Monolix®). Published under CC BY-NC-ND 4.0.
+- **M. Fusella Giuntini, C. Voyant, D. Taieb, D. Barbolosi**, "Computational Modeling and Trends in RAI Therapy for Thyroid Cancer: A Field with Clinical Promise," *Biomedical Journal of Scientific & Technical Research* 62(4) (2025). https://doi.org/10.26717/BJSTR.2025.62.009789 ([HAL: hal-05410326](https://hal.science/hal-05410326/)) — an NLP-assisted bibliometric review of 78 publications (2001-2025) on computational RAI-therapy modeling, positioning RAIR-Sim within that landscape. Published under CC BY-SA 4.0.
+- The Conversation (May 2026): ["IA et cancer de la thyroïde : demain, la fin des traitements standardisés ?"](https://theconversation.com/ia-et-cancer-de-la-thyro-de-demain-la-fin-des-traitements-standardises-274352) — accessible-audience summary of the "hybrid digital twin" approach this simulator is part of.
 
 ## Citation
 
-If you use this code, please cite this repository (see [`CITATION.cff`](CITATION.cff)) and, in academic work, the companion paper above.
+If you use this code, please cite this repository and, in academic work, the Scientific Reports paper above (see [`CITATION.cff`](CITATION.cff) for both, plus the BJSTR review as a secondary reference).
 
 ## License
 

@@ -1,16 +1,24 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below. In academic work, please also cite the companion Scientific Reports paper once its full reference is added here."
+message: "If you use this software, please cite it as below and, in academic work, the companion Scientific Reports paper (see preferred-citation)."
 title: "RAIR-Sim: a compartmental simulator of radioactive iodine therapy response in metastatic thyroid cancer"
 type: software
 
 authors:
   - given-names: "Marie"
     family-names: "Fusella Giuntini"
+    affiliation: "SPE Laboratory, University of Corsica, Corte, France"
+    email: "fusella_m@univ-corse.fr"
   - given-names: "Cyril"
     family-names: "Voyant"
-    affiliation: "Mines Paris - PSL, O.I.E. Laboratory, France"
+    affiliation: "OIE Laboratory, Mines Paris - PSL, Sophia-Antipolis, France"
     website: "https://person.cyrilvoyant.com"
     orcid: "https://orcid.org/0000-0003-0242-7377"
+  - given-names: "David"
+    family-names: "Taieb"
+    affiliation: "Department of Nuclear Medicine, La Timone University Hospital, Aix-Marseille University, France"
+  - given-names: "Dominique"
+    family-names: "Barbolosi"
+    affiliation: "COMPO, Cancer Research Center of Marseille, Inserm U1068, Aix-Marseille University, France"
 
 repository-code: "https://github.com/MarieFG49/CTD_SIMU_RAI"
 license: "MIT"
@@ -24,8 +32,10 @@ abstract: >
   by fraction, letting clinicians explore how the number of iratherapy
   sessions, the interval between sessions, and the administered activity
   affect the simulated biomarker trajectory, for both RAI-responding and
-  RAI-refractory virtual patients. Includes an interactive MATLAB App
-  Designer interface (RAIR-Sim) and scripted sensitivity-analysis tools.
+  RAI-refractory virtual patients. Model parameters calibrated on a
+  50-patient cohort via MCMC-SAEM (Monolix). Includes an interactive
+  MATLAB App Designer interface (RAIR-Sim) and scripted sensitivity-
+  analysis tools.
 
 keywords:
   - radioactive iodine therapy
@@ -37,10 +47,38 @@ keywords:
   - treatment optimization
   - MATLAB
 
-identifiers:
-  - type: doi
-    value: "10.1038/s41598-026-56267-1"
-    description: "Companion Scientific Reports paper (bibliographic details to be confirmed and added to preferred-citation)"
-  - type: other
-    value: "https://hal.science/hal-05410326/"
-    description: "Preprint"
+preferred-citation:
+  type: article
+  title: "A computational framework for optimizing radioiodine therapy protocols in metastatic thyroid cancer"
+  authors:
+    - given-names: "Marie"
+      family-names: "Fusella Giuntini"
+    - given-names: "Cyril"
+      family-names: "Voyant"
+    - given-names: "David"
+      family-names: "Taieb"
+    - given-names: "Dominique"
+      family-names: "Barbolosi"
+  journal: "Scientific Reports"
+  year: 2026
+  doi: "10.1038/s41598-026-56267-1"
+  notes: "Received 15 January 2025; accepted 29 May 2026. Article in press at time of writing (unedited accepted manuscript)."
+
+references:
+  - type: article
+    title: "Computational Modeling and Trends in RAI Therapy for Thyroid Cancer: A Field with Clinical Promise"
+    authors:
+      - given-names: "Marie"
+        family-names: "Fusella Giuntini"
+      - given-names: "Cyril"
+        family-names: "Voyant"
+      - given-names: "David"
+        family-names: "Taieb"
+      - given-names: "Dominique"
+        family-names: "Barbolosi"
+    journal: "Biomedical Journal of Scientific & Technical Research"
+    year: 2025
+    volume: "62"
+    issue: "4"
+    doi: "10.26717/BJSTR.2025.62.009789"
+    notes: "Bibliometric/NLP review of the RAI-therapy computational-modeling literature (78 publications, 2001-2025) that positions RAIR-Sim within the field; also available via HAL (hal-05410326)."
