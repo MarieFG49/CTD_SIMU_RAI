@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "SoftwareSourceCode",
+  "name": "CTD_SIMU_RAI",
+  "alternateName": "RAIR-Sim",
+  "description": "A compartmental (ODE-based) simulator of the therapeutic response to radioactive iodine (RAI) therapy in metastatic thyroid cancer. Three coupled differential equations (administered activity, tumor cell number, thyroglobulin biomarker) are solved in closed form fraction by fraction, letting clinicians explore how the number of iratherapy sessions, the interval between sessions, and the administered activity affect the simulated biomarker trajectory. Model parameters calibrated on a 50-patient cohort via MCMC-SAEM (Monolix).",
+  "url": "https://github.com/MarieFG49/CTD_SIMU_RAI",
+  "codeRepository": "https://github.com/MarieFG49/CTD_SIMU_RAI",
+  "programmingLanguage": "MATLAB",
+  "license": "https://spdx.org/licenses/MIT",
+  "version": "1.0.0",
+  "softwareRequirements": [
+    "MATLAB",
+    "Symbolic Math Toolbox",
+    "App Designer"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Marie Fusella Giuntini",
+      "email": "fusella_m@univ-corse.fr",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "SPE Laboratory, University of Corsica, Corte, France"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Cyril Voyant",
+      "url": "https://person.cyrilvoyant.com",
+      "identifier": "https://orcid.org/0000-0003-0242-7377",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "OIE Laboratory, Mines Paris - PSL, Sophia-Antipolis, France"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "David Taieb",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Nuclear Medicine, La Timone University Hospital, Aix-Marseille University, France"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Dominique Barbolosi",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "COMPO, Cancer Research Center of Marseille, Inserm U1068, Aix-Marseille University, France"
+      }
+    }
+  ],
+  "keywords": [
+    "radioactive iodine therapy",
+    "thyroid cancer",
+    "digital twin",
+    "pharmacodynamic modeling",
+    "compartmental model",
+    "thyroglobulin",
+    "treatment optimization",
+    "personalized medicine",
+    "decision support",
+    "MATLAB",
+    "nuclear medicine"
+  ],
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "A computational framework for optimizing radioiodine therapy protocols in metastatic thyroid cancer",
+      "datePublished": "2026",
+      "journalName": "Scientific Reports",
+      "doi": "10.1038/s41598-026-56267-1",
+      "author": [
+        { "@type": "Person", "name": "Marie Fusella Giuntini" },
+        { "@type": "Person", "name": "Cyril Voyant" },
+        { "@type": "Person", "name": "David Taieb" },
+        { "@type": "Person", "name": "Dominique Barbolosi" }
+      ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Computational Modeling and Trends in RAI Therapy for Thyroid Cancer: A Field with Clinical Promise",
+      "datePublished": "2025",
+      "journalName": "Biomedical Journal of Scientific & Technical Research",
+      "volume": "62",
+      "issue": "4",
+      "doi": "10.26717/BJSTR.2025.62.009789",
+      "author": [
+        { "@type": "Person", "name": "Marie Fusella Giuntini" },
+        { "@type": "Person", "name": "Cyril Voyant" },
+        { "@type": "Person", "name": "David Taieb" },
+        { "@type": "Person", "name": "Dominique Barbolosi" }
+      ]
+    }
+  ]
+}

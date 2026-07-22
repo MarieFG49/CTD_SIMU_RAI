@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="RAIR-Sim: a MATLAB compartmental simulator of radioactive iodine (RAI) therapy response in metastatic thyroid cancer." />
+  <meta name="keywords" content="radioactive iodine therapy, thyroid cancer, digital twin, pharmacodynamic modeling, compartmental model, thyroglobulin, treatment optimization, personalized medicine, MATLAB, nuclear medicine" />
+  <title>CTD_SIMU_RAI — RAIR-Sim Demo</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; color:#111; }
+    header { background:#0b5cff; color:white; padding:1rem; }
+    main { padding:1rem; max-width:900px; margin:0 auto; }
+    .links { margin-top:1rem; display:flex; gap:1rem; flex-wrap:wrap; }
+    .btn { background:#0b5cff; color:white; padding:.5rem .75rem; border-radius:6px; text-decoration:none; }
+    .tags { margin-top:.5rem; }
+    .tag { display:inline-block; background:#eef2ff; color:#0b5cff; padding:.2rem .6rem; border-radius:999px; font-size:.85rem; margin:.15rem; }
+    footer { padding:1rem; text-align:center; color:#666; font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <header><h1>CTD_SIMU_RAI — RAIR-Sim</h1></header>
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>RAIR-Sim is a compartmental (ODE-based) simulator of the therapeutic response to radioactive iodine (RAI) therapy in metastatic thyroid cancer. Three coupled differential equations — administered activity decay, tumor cell population dynamics, and thyroglobulin (Tg) biomarker kinetics — are solved in closed form fraction by fraction. Clinicians can explore how the number of iratherapy sessions, the interval between sessions, and the administered activity affect the simulated Tg trajectory, for both RAI-responding and RAI-refractory virtual patients. Model parameters were calibrated on a 50-patient cohort via MCMC-SAEM (Monolix). See the <a href="https://github.com/MarieFG49/CTD_SIMU_RAI/blob/main/README.md">README</a> for the model equations and usage.</p>
+
+      <div class="tags">
+        <span class="tag">radioactive iodine therapy</span>
+        <span class="tag">thyroid cancer</span>
+        <span class="tag">digital twin</span>
+        <span class="tag">compartmental model</span>
+        <span class="tag">thyroglobulin</span>
+        <span class="tag">treatment optimization</span>
+        <span class="tag">MATLAB</span>
+      </div>
+    </section>
+
+    <section style="margin-top:1.5rem;">
+      <h2>Companion publications</h2>
+      <ul>
+        <li>Fusella Giuntini, Voyant, Taieb, Barbolosi, "A computational framework for optimizing radioiodine therapy protocols in metastatic thyroid cancer," <em>Scientific Reports</em> (2026). <a href="https://doi.org/10.1038/s41598-026-56267-1" target="_blank" rel="noopener">doi.org/10.1038/s41598-026-56267-1</a></li>
+        <li>Fusella Giuntini, Voyant, Taieb, Barbolosi, "Computational Modeling and Trends in RAI Therapy for Thyroid Cancer: A Field with Clinical Promise," <em>Biomedical Journal of Scientific &amp; Technical Research</em> 62(4) (2025). <a href="https://doi.org/10.26717/BJSTR.2025.62.009789" target="_blank" rel="noopener">doi.org/10.26717/BJSTR.2025.62.009789</a> (also on <a href="https://hal.science/hal-05410326/" target="_blank" rel="noopener">HAL</a>)</li>
+      </ul>
+    </section>
+
+    <div class="links">
+      <a class="btn" href="https://github.com/MarieFG49/CTD_SIMU_RAI" target="_blank" rel="noopener">View source on GitHub</a>
+      <a class="btn" href="https://doi.org/10.1038/s41598-026-56267-1" target="_blank" rel="noopener">Read the paper</a>
+    </div>
+  </main>
+  <footer><small>To publish this page: enable GitHub Pages (Settings &rarr; Pages &rarr; Branch <code>main</code>, folder <code>/</code>).</small></footer>
+</body>
+</html>
