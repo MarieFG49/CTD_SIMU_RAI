@@ -4,12 +4,18 @@
   "name": "CTD_SIMU_RAI",
   "alternateName": "RAIR-Sim",
   "description": "A compartmental (ODE-based) simulator of the therapeutic response to radioactive iodine (RAI) therapy in metastatic thyroid cancer. Three coupled differential equations (administered activity, tumor cell number, thyroglobulin biomarker) are solved in closed form fraction by fraction, letting clinicians explore how the number of iratherapy sessions, the interval between sessions, and the administered activity affect the simulated biomarker trajectory. Model parameters calibrated on a 50-patient cohort via MCMC-SAEM (Monolix).",
-  "url": "https://github.com/cyrilvoyant/CTD_SIMU_RAI",
-  "codeRepository": "https://github.com/cyrilvoyant/CTD_SIMU_RAI",
-  "identifier": "https://doi.org/10.5281/zenodo.21496198",
+  "url": "https://github.com/MarieFG49/CTD_SIMU_RAI",
+  "codeRepository": "https://github.com/MarieFG49/CTD_SIMU_RAI",
   "programmingLanguage": "MATLAB",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "1.0.1",
+  "version": "1.0.0",
+  "additionalProperty": {
+    "@type": "PropertyValue",
+    "name": "Archived fork (Zenodo)",
+    "value": "10.5281/zenodo.21496198",
+    "url": "https://doi.org/10.5281/zenodo.21496198",
+    "description": "A fork with documentation and citation-metadata improvements is archived independently at this DOI (github.com/cyrilvoyant/CTD_SIMU_RAI); this DOI does not identify this repository itself."
+  },
   "softwareRequirements": [
     "MATLAB",
     "Symbolic Math Toolbox",

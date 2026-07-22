@@ -20,15 +20,14 @@ authors:
     family-names: "Barbolosi"
     affiliation: "COMPO, Cancer Research Center of Marseille, Inserm U1068, Aix-Marseille University, France"
 
-repository-code: "https://github.com/cyrilvoyant/CTD_SIMU_RAI"
-url: "https://github.com/cyrilvoyant/CTD_SIMU_RAI"
+repository-code: "https://github.com/MarieFG49/CTD_SIMU_RAI"
+license: "MIT"
+version: "1.0.0"
+
 identifiers:
   - type: doi
     value: "10.5281/zenodo.21496198"
-    description: "Zenodo archive of this fork (cyrilvoyant/CTD_SIMU_RAI)"
-doi: "10.5281/zenodo.21496198"
-license: "MIT"
-version: "1.0.1"
+    description: "Zenodo archive of a fork with documentation and citation-metadata improvements (github.com/cyrilvoyant/CTD_SIMU_RAI) - not a DOI for this repository itself."
 
 abstract: >
   A compartmental (ODE-based) simulator of the therapeutic response to
